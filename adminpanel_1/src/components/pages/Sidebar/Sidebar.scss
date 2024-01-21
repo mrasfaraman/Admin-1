@@ -1,0 +1,79 @@
+.sidebar {
+  height: 100vh;
+  background-color: hwb(227 10% 67%);
+  width: 300px;
+  z-index: 2;
+  position: fixed; /* Make the sidebar fixed */
+  left: 0; /* Set the fixed position to the left */
+
+  .top {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center {
+    padding-top: 30px; /* Adjust for the height of the top section */
+    padding-left: 30px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .listLogout {
+        margin-top: 100px;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: hwb(227 2% 72%);
+        }
+
+        .icon {
+          font-size: 20px;
+          color: white;
+        }
+
+        span {
+          font-size: 21px;
+          font-weight: 550;
+          color: white;
+          margin-left: 10px;
+          font-family: 'Montserrat', sans-serif;
+        }
+      }
+    }
+
+    .title {
+      margin-top: 10px;
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+}
+
+/* Adjust content area to make space for the fixed sidebar */
+.content {
+  margin-left: 300px; /* Adjust this to match the width of your sidebar */
+  padding: 20px;
+  overflow-y: auto;
+}

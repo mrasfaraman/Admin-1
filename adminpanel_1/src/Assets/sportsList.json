@@ -1,0 +1,34 @@
+{
+    "sport1": {
+        "name": "Football",
+        "size": [6, 12]
+    },
+    "sport2": {
+        "name": "Cricket",
+        "size": [6, 12]
+    },
+    "sport3": {
+        "name": "Tennis",
+        "size": [2, 4]
+    },
+    "sport4": {
+        "name": "Basketball",
+        "size": [5, 12]
+    },
+    "sport5": {
+        "name": "Table Tennis",
+        "size": [2, 4]
+    },
+    "sport6": {
+        "name": "Hockey",
+        "size": [12]
+    },
+    "sport7": {
+        "name": "Badminton",
+        "size": [2, 4]
+    },
+    "sport8": {
+        "name": "Volleyball",
+        "size": [7]
+    }
+}
