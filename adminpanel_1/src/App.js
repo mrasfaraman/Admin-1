@@ -22,87 +22,77 @@ function App() {
   }
 
   return (
-    <div className='App'>
+   <div className='App'>
       <UserProvider>
         <ArenaProvider>
           <BrowserRouter>
             <Routes>
-              <Route path='/'>
-                <Route path='/login' element={<Login />} />
-                <Route
-                  index
-                  element={
-                    <RequireAuth>
-                      <Dashboard />
-                    </RequireAuth>
-                  }
-                />
-                <Route
-                  path='/signup'
-                  element={
-                    <RequireAuth>
-                      <SignUp />
-                    </RequireAuth>
-                  }
-                />
-                <Route
-                  path='/welcomePage'
-                  element={
-                    <RequireAuth>
-                      <WelcomePage />
-                    </RequireAuth>
-                  }
-                />
-                <Route
-                  path='/map'
-                  element={
-                    <RequireAuth>
-                      <Map />
-                    </RequireAuth>
-                  }
-                />
-                <Route
-                  path='/slots'
-                  element={
-                    <RequireAuth>
-                      <Slots />
-                    </RequireAuth>
-                  }
-                />
-
-                <Route
-                  path='/bookings'
-                  element={
-                    <RequireAuth>
-                      <Bookings />
-                    </RequireAuth>
-                  }
-                />
-                <Route
-                  path='/rating_reviews'
-                  element={
-                    <RequireAuth>
-                      <Rating_Reviews />
-                    </RequireAuth>
-                  }
-                />
-                <Route
-                  path='/sports_facilities'
-                  element={
-                    <RequireAuth>
-                      <Sports_Facilities />
-                    </RequireAuth>
-                  }
-                />
-                <Route
-                  path='/profile'
-                  element={
-                    <RequireAuth>
-                      <AdminProfile />
-                    </RequireAuth>
-                  }
-                />
-              </Route>
+              <Route path='/login' element={<Login />} />
+              <Route path='/signup' element={<SignUp />} />
+              <Route
+                path='/'
+                element={
+                  <RequireAuth>
+                    <Dashboard />
+                  </RequireAuth>
+                }
+              />
+              <Route
+                path='/welcomePage'
+                element={
+                  <RequireAuth>
+                    <WelcomePage />
+                  </RequireAuth>
+                }
+              />
+              <Route
+                path='/map'
+                element={
+                  <RequireAuth>
+                    <Map />
+                  </RequireAuth>
+                }
+              />
+              <Route
+                path='/slots'
+                element={
+                  <RequireAuth>
+                    <Slots />
+                  </RequireAuth>
+                }
+              />
+              <Route
+                path='/bookings'
+                element={
+                  <RequireAuth>
+                    <Bookings />
+                  </RequireAuth>
+                }
+              />
+              <Route
+                path='/rating_reviews'
+                element={
+                  <RequireAuth>
+                    <Rating_Reviews />
+                  </RequireAuth>
+                }
+              />
+              <Route
+                path='/sports_facilities'
+                element={
+                  <RequireAuth>
+                    <Sports_Facilities />
+                  </RequireAuth>
+                }
+              />
+              <Route
+                path='/profile'
+                element={
+                  <RequireAuth>
+                    <AdminProfile />
+                  </RequireAuth>
+                }
+              />
             </Routes>
           </BrowserRouter>
         </ArenaProvider>
