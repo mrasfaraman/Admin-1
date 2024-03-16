@@ -13,6 +13,7 @@ Slots Page: Add time slots for various sports, specifying slot ID, sport type, s
 Booking Page: Divided into mobile app bookings and manual bookings, catering to both online and walk-in customers. Mobile app bookings display user details and payment status.
 Rating and Reviews Page: See ratings and reviews provided by customers via the mobile app, enabling arena owners to improve services based on feedback.
 Facilities Page: Add details about the facilities provided in the sports arena, enhancing transparency for customers.
+
 Installation:
 
 Clone the PlayPal repository to your local machine.
@@ -20,6 +21,7 @@ Navigate to the project directory.
 Install dependencies using npm install.
 Configure database settings and Google Maps API key in the appropriate files.
 Run the project using npm start.
+
 Usage:
 
 Access the PlayPal portal using the provided URL.
